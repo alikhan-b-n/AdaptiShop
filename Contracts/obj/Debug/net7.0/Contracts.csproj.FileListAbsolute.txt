@@ -1,0 +1,12 @@
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/bin/Debug/net7.0/Contracts.deps.json
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/bin/Debug/net7.0/Contracts.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/bin/Debug/net7.0/Contracts.pdb
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.csproj.AssemblyReference.cache
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.AssemblyInfoInputs.cache
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.AssemblyInfo.cs
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.csproj.CoreCompileInputs.cache
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/refint/Contracts.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.pdb
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/ref/Contracts.dll

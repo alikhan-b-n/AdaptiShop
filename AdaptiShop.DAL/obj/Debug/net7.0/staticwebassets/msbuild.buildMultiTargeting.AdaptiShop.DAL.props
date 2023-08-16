@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/AdaptiShop.DAL.props" />
+</Project>
