@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+0t4vh9azchpU5Vzq1iQrIBm1m2NMfwxBF50V9rl9Xwqw6gg/DLrR4tqP+Tyj+cHGt0cy0tH04XpxjtZfQUONw==",
+  "dgSpecHash": "GYdQswlifbJg1hLJ0VA6Ui3ZsDgDr+iV8tUmX5AS27st5wbFiHDQfoO5abTFe6oebGM/TNImFFR8GQyF+Crmyw==",
   "success": true,
   "projectFilePath": "/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.DAL/AdaptiShop.DAL.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "/Users/alikhanbalkhashbayev/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.9/microsoft.entityframeworkcore.abstractions.7.0.9.nupkg.sha512",
     "/Users/alikhanbalkhashbayev/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.9/microsoft.entityframeworkcore.analyzers.7.0.9.nupkg.sha512",
     "/Users/alikhanbalkhashbayev/.nuget/packages/microsoft.entityframeworkcore.inmemory/7.0.9/microsoft.entityframeworkcore.inmemory.7.0.9.nupkg.sha512",
-    "/Users/alikhanbalkhashbayev/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.5/microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
+    "/Users/alikhanbalkhashbayev/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.9/microsoft.entityframeworkcore.relational.7.0.9.nupkg.sha512",
     "/Users/alikhanbalkhashbayev/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/alikhanbalkhashbayev/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
     "/Users/alikhanbalkhashbayev/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",

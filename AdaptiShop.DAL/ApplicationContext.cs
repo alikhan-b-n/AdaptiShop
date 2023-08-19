@@ -1,5 +1,4 @@
 using AdaptiShop.DAL.Entities;
-using Microsoft.AspNetCore.Authentication;
 using Microsoft.EntityFrameworkCore;
 
 namespace AdaptiShop.DAL;
@@ -8,6 +7,7 @@ public class ApplicationContext : DbContext
 {
     public ApplicationContext(DbContextOptions options) : base(options)
     {
+        Database.Migrate();
         Database.EnsureCreated();
     }
 

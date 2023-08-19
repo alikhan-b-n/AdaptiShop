@@ -20,8 +20,22 @@ public class ProductService : IProductService
     {
         try
         {
+            ProductEntity productEntity;
+            if (productDto.Id == Guid.Empty)
+            {
+                productEntity = new ProductEntity
+                {
+                    Title = productDto.Title,
+                    Description = productDto.Description,
+                    Price = productDto.Price
+                };
+            }
             var categoryEntity = await _categoryProvider.GetById(productDto.CategoryId);
-            var productEntity = new ProductEntity
+            if (categoryEntity.Id != productDto.CategoryId)
+            {
+                throw new ArgumentException("CategoryId is not referencing any existing category");
+            }
+            productEntity = new ProductEntity
             {
                 CategoryId = categoryEntity.Id,
                 Category = categoryEntity,
@@ -34,7 +48,7 @@ public class ProductService : IProductService
         }
         catch (Exception e)
         {
-            throw new ArgumentException(e.Message);
+            throw new Exception(e.Message);
         }
     }
 
@@ -56,13 +70,19 @@ public class ProductService : IProductService
         try
         {
             var productEntity = await _productProvider.GetById(id);
-            ProductDto productDto =
-                new ProductDto(productEntity.CategoryId, productEntity.Title, productEntity.Id, productEntity.Price, productEntity.Description);
-            return productDto;
+            return productEntity.Id == id
+                ? new ProductDto
+                (
+                    productEntity.CategoryId,
+                    productEntity.Title,
+                    productEntity.Price,
+                    productEntity.Description
+                )
+                : throw new ArgumentException("Id is not found");
         }
         catch (Exception e)
         {
-            throw new ArgumentException(e.Message);
+            throw new Exception(e.Message);
         }
     }
 
@@ -71,7 +91,7 @@ public class ProductService : IProductService
         try
         {
             var productEntities = await _productProvider.GetAll();
-            return productEntities.Select(x => new ProductDto(x.CategoryId, x.Title, x.Id, x.Price, x.Description)).ToList();
+            return productEntities.Select(x => new ProductDto(x.CategoryId, x.Title, x.Price, x.Description)).ToList();
         }
         catch (Exception e)
         {
@@ -83,18 +103,16 @@ public class ProductService : IProductService
     {
         try
         {
-            await _productProvider.Update(new ProductEntity
-            {
-                CategoryId = productDto.CategoryId,
-                Title = productDto.Title,
-                Id = productDto.Id,
-                Description = productDto.Description,
-                Price = productDto.Price
-            });
-            
+            var productEntity = await _productProvider.GetById(productDto.Id);
+
+            productEntity.Price = productDto.Price;
+            productEntity.Title = productDto.Title;
+            productEntity.CategoryId = productDto.CategoryId;
+            await _productProvider.Update(productEntity);
+
             return true;
         }
-        catch (Exception e)
+        catch (ArgumentException e)
         {
             throw new ArgumentException(e.Message);
         }

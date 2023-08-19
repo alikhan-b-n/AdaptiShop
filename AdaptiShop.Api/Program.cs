@@ -50,8 +50,8 @@ builder.Services.AddAuthentication(x =>
 
 #endregion
 
-builder.Services.AddDbContext<ApplicationContext>(x =>
-    x.UseInMemoryDatabase(builder.Configuration.GetConnectionString("InMemory")!));
+builder.Services.AddDbContext<ApplicationContext>(options =>
+    options.UseNpgsql(builder.Configuration.GetConnectionString("Postgres")));
 
 ConfigureServicesSwagger.ConfigureServices(builder.Services);
 builder.Services.AddControllers();

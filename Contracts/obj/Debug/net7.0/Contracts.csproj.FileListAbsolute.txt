@@ -10,3 +10,8 @@
 /Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/refint/Contracts.dll
 /Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.pdb
 /Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/ref/Contracts.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/bin/Debug/net7.0/Contracts.runtimeconfig.json
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.genruntimeconfig.cache
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/bin/Debug/net7.0/AdaptiShop.DAL.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/bin/Debug/net7.0/AdaptiShop.DAL.pdb
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/Contracts/obj/Debug/net7.0/Contracts.csproj.CopyComplete

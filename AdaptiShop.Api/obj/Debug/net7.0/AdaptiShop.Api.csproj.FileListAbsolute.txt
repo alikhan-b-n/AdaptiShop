@@ -52,3 +52,8 @@
 /Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.Api/bin/Debug/net7.0/Contracts.pdb
 /Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.Api/obj/Debug/net7.0/AdaptiShop.Api.MvcApplicationPartsAssemblyInfo.cs
 /Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.Api/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.Api/bin/Debug/net7.0/Humanizer.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.Api/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Design.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.Api/bin/Debug/net7.0/Microsoft.Extensions.DependencyModel.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.Api/bin/Debug/net7.0/Mono.TextTemplating.dll
+/Users/alikhanbalkhashbayev/RiderProjects/AdaptiShop/AdaptiShop.Api/bin/Debug/net7.0/System.CodeDom.dll

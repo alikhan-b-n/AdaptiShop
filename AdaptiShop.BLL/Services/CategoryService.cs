@@ -18,15 +18,27 @@ public class CategoryService : ICategoryService
     {
         try
         {
-            var fatherCatergory = await _categoryProvider.GetById(categoryDto.FatherCategoryId);
-            CategoryEntity categoryEntity = new CategoryEntity
+            if (categoryDto.FatherCategoryId == null)
             {
-                FatherCategory = fatherCatergory,
-                FatherCategoryId = fatherCatergory.Id,
-                Name = categoryDto.Name
-            };
-            await _categoryProvider.Create(categoryEntity);
-            return categoryEntity.Id;
+                CategoryEntity categoryEntity = new CategoryEntity
+                {
+                    Name = categoryDto.Name
+                };
+                await _categoryProvider.Create(categoryEntity);
+                return categoryEntity.Id;            }
+            else
+            {
+                var fatherCatergory = await _categoryProvider.GetById(categoryDto.FatherCategoryId);
+                CategoryEntity categoryEntity = new CategoryEntity
+                {
+                    FatherCategory = fatherCatergory,
+                    FatherCategoryId = fatherCatergory.Id,
+                    Name = categoryDto.Name
+                };
+                await _categoryProvider.Create(categoryEntity);
+                return categoryEntity.Id;
+            }
+            
         }
         catch (Exception e)
         {
